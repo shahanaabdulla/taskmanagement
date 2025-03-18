@@ -14,12 +14,12 @@ module.exports = (sequelize, DataTypes) => {
       title: DataTypes.STRING,
       description: DataTypes.STRING,
       status: DataTypes.STRING,
-      userId: {  // Add the userId field as a foreign key to relate the task to a user
+      userId: {  
         type: DataTypes.INTEGER,
         allowNull: false,
         references: {
-          model: 'Users', // This should match the model name in your `User` table
-          key: 'id',      // The primary key in the `Users` table
+          model: 'Users', 
+          key: 'id',      
         },
       },
     },

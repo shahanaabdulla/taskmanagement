@@ -1,4 +1,4 @@
-// index.js
+// app.js
 const express = require('express');
 const cors = require('cors');
 const taskRoutes = require('./routes/tasks');
